@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walmart | All Product</title>
+    <link rel="icon" href="Images/Walmart Logo.png">
+    <link rel="stylesheet" href="walmart-header.css">
+    <link rel="stylesheet" href="walmart-all-product.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="product-main">
+        <header class="walmart-header">
+            <div class="left-side-element">
+                <div class="walmart-logo">
+                    <a href="index.html">
+                        <img src="Images/Walmart Logo.png" id="icon">
+                    </a>
+                </div>
+                <div class="deliver-method">
+                    <div id="dropdown-item">
+                        <button id="mybtn">
+                            <img src="Images/Dropdown-head-icon.webp" id="dropdown-img">
+                            <div class="inner-div">
+                                <span id="btn-deliver" style="font-size: 14px;"><b>How do you want your items?</b></span>
+                                <span id="btn-location">Sacramento,95829,Sacramento Supercenter</span>
+                            </div>
+                            <span><i class='bx bx-chevron-down'></i></span>
+                        </button>
+                    </div>     
+                </div>
+            </div>
+
+            <div class="for-search">
+                <input id="search-input" type="text" placeholder="Search everything at Walmart online and in store">
+                <button id="search-icon" type="button"><i class='bx bx-search'></i></button> 
+            </div>
+            
+            <div class="rightSideElement">
+                <div class="fav-list">
+                    <button id="btn-fav-list">
+                        <i class='bx bx-heart'></i>
+                        <span id="btn-reorder">Reorder</span>
+                        <span id="btn-my-items"><b>My Items</b></span>
+                    </button>
+                </div>
+                <div class="account-sign-in">
+                    <button class="btn-signin">
+                        <i class='bx bx-user'></i>
+                        <span>sign In</span>
+                        <span><b>Account</b></span>
+                    </button>
+                </div>
+                <div class="cart-icon">
+                    <a id="a-cart" href="#">
+                        <i class='bx bx-cart'></i>
+                        <span id="cart-quantity">0</span>
+                        <span id="cart-price">$0.00</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!--Navigation Section=================================-->
+        <nav class="product-organizer">
+            <ul>
+                <li><a href="walmart-all-product.html" id="all-products">All Products</a></li>
+                <li><a href="#" id="towels">Towels</a></li>
+                <li><a href="#" id="The-Beauty-Event">The Beauty Event</a></li>
+                <li><a href="#" id="fashion">Fashion</a></li>
+                <li><a href="#" id="Patio-Garden">Patio & Garden</a></li>
+                <li><a href="#" id="electronics">Electronics</a></li>
+                <li><a href="#" id="grocery">Grocery</a></li>
+            </ul>
+        </nav>
+
+        <!--All Product Top Flex===================================-->
+        <div class="all-product-top-flex">
+            <div class="flex-start-img">
+                <img src="Images/All Product/All Product Grid Top/Fashion.jpg" alt="fashion" width="160px" height="200" id="all-product-fashion">
+                <img src="Images/All Product/All Product Grid Top/Gaming.jpg" alt="gaming" width="160px" height="200" id="all-product-gaming">
+            </div>
+            <div class="all-product-header">
+                <h1 id="all-product-h1">All essentials for pickup & delivery</h1>
+                <span id="all-product-span">Get the needs even faster.</span>
+                <button href="#" id="all-product-shopnow">Shop now</button>
+            </div>
+            <img src="Images/All Product/All Product Grid Top/Patio.jpg" alt="patio" width="320px" height="200" id="all-product-patio">
+        </div>
+
+        <!--All Product===================================-->
+        <div class="product-grid">
+        </div>
+    </div>
+
+    <script type="module" src="Index.js"></script>
+</body>
+</html>
